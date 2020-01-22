@@ -3,6 +3,7 @@ package edu.csp.csc420.week2;
 public class Recursion {
 
     public static void main(String[] args) {
+        //print message a few times
         printMeXTimes("hello", 10);
     }
 
