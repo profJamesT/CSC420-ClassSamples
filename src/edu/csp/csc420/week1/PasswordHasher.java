@@ -41,8 +41,8 @@ public class PasswordHasher {
             SecretKeyFactory f = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
             byte[] hash = f.generateSecret(spec).getEncoded();
             //Uncomment to see this code in action
-            System.out.printf("salt: %s%n", enc.encodeToString(salt));
-            System.out.printf("hash: %s%n", enc.encodeToString(hash));
+//            System.out.printf("salt: %s%n", enc.encodeToString(salt));
+//            System.out.printf("hash: %s%n", enc.encodeToString(hash));
             return enc.encodeToString(hash);
         } catch (Exception e) {
             System.out.println("Error found>" + e);
