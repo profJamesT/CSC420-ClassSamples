@@ -7,6 +7,7 @@ public class Fruit implements Comparable<Fruit>{
     private String color;
     private int size;
 
+    //Getters and Setters
     public String getName() {
         return name;
     }
@@ -31,6 +32,7 @@ public class Fruit implements Comparable<Fruit>{
         this.size = size;
     }
 
+    //Always nice to be able to print out an object easily
     @Override
     public String toString() {
         return "Fruit{" +
@@ -40,11 +42,13 @@ public class Fruit implements Comparable<Fruit>{
                 '}';
     }
 
+    //this is a require override since we are implementing Comprable
     @Override
-    public int compareTo(Fruit o) {
-        return this.getName().compareToIgnoreCase(o.getName());
+    public int compareTo(Fruit f) {
+        return this.getName().compareToIgnoreCase(f.getName());
     }
 
+    //this is a custom sorting class
     public static class colorComparator implements Comparator<Fruit> {
 
         @Override
@@ -53,6 +57,7 @@ public class Fruit implements Comparable<Fruit>{
         }
     }
 
+    //another customer sorting class
     public static class sizeComparator implements Comparator<Fruit> {
 
         @Override
