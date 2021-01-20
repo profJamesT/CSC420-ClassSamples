@@ -46,6 +46,12 @@ public class DemoMain {
         System.out.println("No sorting");
         System.out.println(myFruits);
 
+        System.out.println("--------------------------");
+        for (Fruit f : myFruits) {
+            System.out.println(f.toString());
+        }
+        System.out.println("--------------------------");
+
         //sort by the default sort, which would be the sort that was added due to implementing Cmoprable
         Collections.sort(myFruits);
         System.out.println("Default sorting (by name)");
