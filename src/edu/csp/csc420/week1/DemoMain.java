@@ -11,6 +11,18 @@ public class DemoMain {
     public static void main(String[] args) {
         System.out.println("This is the demo file for week 1");
 
+        //change to 128 and see what happens
+        Long num1 = 127L;
+        Long num2 = 127L;
+
+        if (num1 == num2) {
+            System.out.println("Numbers match");
+        } else {
+            System.out.println("Numbers don't match");
+        }
+
+
+
         //create an ArrayList to hold our Fruit
         ArrayList<Fruit> myFruits = new ArrayList<Fruit>();
 
